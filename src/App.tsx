@@ -1,7 +1,12 @@
 import { defineComponent } from "vue";
+import { RouterView } from "vue-router";
 
 export const App = defineComponent({
   setup(props, ctx) {
-    return () => <h1>Hi</h1>;
+    return () => (
+      <div>
+        <RouterView></RouterView>
+      </div>
+    );
   },
 });
