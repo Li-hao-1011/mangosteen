@@ -1,8 +1,8 @@
 import { RouteRecordRaw } from "vue-router";
-import { Welcome1 } from "../components/welcome/Welcome1";
-import { Welcome2 } from "../components/welcome/Welcome2";
-import { Welcome3 } from "../components/welcome/Welcome3";
-import { Welcome4 } from "../components/welcome/Welcome4";
+import { Welcome1, Welcome1Action } from "../components/welcome/Welcome1";
+import { Welcome2, Welcome2Action } from "../components/welcome/Welcome2";
+import { Welcome3, Welcome3Action } from "../components/welcome/Welcome3";
+import { Welcome4, Welcome4Action } from "../components/welcome/Welcome4";
 import { A } from "../views/A";
 import { B } from "../views/B";
 import { StartPage } from "../views/StartPage";
@@ -18,19 +18,19 @@ export const routes: RouteRecordRaw[] = [
     children: [
       {
         path: "1",
-        component: Welcome1,
+        components: { main: Welcome1, footer: Welcome1Action },
       },
       {
         path: "2",
-        component: Welcome2,
+        components: { main: Welcome2, footer: Welcome2Action },
       },
       {
         path: "3",
-        component: Welcome3,
+        components: { main: Welcome3, footer: Welcome3Action },
       },
       {
         path: "4",
-        component: Welcome4,
+        components: { main: Welcome4, footer: Welcome4Action },
       },
     ],
   },
