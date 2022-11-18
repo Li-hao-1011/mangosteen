@@ -13,9 +13,7 @@ export const Welcome = defineComponent({
         <main>
           <RouterView />
         </main>
-        <footer>
-          <button>footer</button>
-        </footer>
+        <footer></footer>
       </div>
     );
   },

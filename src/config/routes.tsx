@@ -5,6 +5,7 @@ import { Welcome3 } from "../components/welcome/Welcome3";
 import { Welcome4 } from "../components/welcome/Welcome4";
 import { A } from "../views/A";
 import { B } from "../views/B";
+import { StartPage } from "../views/StartPage";
 import { Welcome } from "../views/Welcome";
 
 export const routes: RouteRecordRaw[] = [
@@ -32,5 +33,9 @@ export const routes: RouteRecordRaw[] = [
         component: Welcome4,
       },
     ],
+  },
+  {
+    path: "/start",
+    component: StartPage,
   },
 ];
