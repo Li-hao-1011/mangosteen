@@ -16,12 +16,12 @@ export const Welcome2: FunctionalComponent = () => (
 Welcome2.displayName = "Welcome2";
 
 export const Welcome2Action: FunctionalComponent = () => (
-  <>
-    <RouterLink class={s.actions_fake} to="/start">
+  <div class={s.actions}>
+    <RouterLink class={s.fake} to="/start">
       跳过
     </RouterLink>
     <RouterLink to="/welcome/3">下一页</RouterLink>
     <RouterLink to="/start">跳过</RouterLink>
-  </>
+  </div>
 );
 Welcome2Action.displayName = "Welcome2Action";

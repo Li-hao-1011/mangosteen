@@ -1,27 +1,39 @@
 .card {
   flex-grow: 1;
-  background-color: var(--welcome-card-bg);
-  border-radius: 8px;
-  padding: 16px;
-  margin: 16px 16px 0 16px;
   display: flex;
   flex-direction: column;
+  background: var(--welcome-card-bg);
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-
-  >.icon {
-    width: 128px;
-  }
+  position: relative;
 
   >h2 {
     margin-top: 40px;
   }
-
 }
 
+.actions {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: var(--welcome-nav-height);
 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 24px;
+  padding: 0 16px;
+  color: var(--welcome-text);
+  padding-bottom: var(--welcome-nav-gap);
+  z-index: var(--z-index-bottom-nav);
+  background: var(--welcome-bg-end);
 
-.actions_fake {
-  visibility: hidden;
+  >.fake {
+    visibility: hidden;
+  }
 }

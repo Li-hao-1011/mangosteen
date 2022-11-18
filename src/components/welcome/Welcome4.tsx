@@ -16,14 +16,14 @@ export const Welcome4: FunctionalComponent = () => (
 Welcome4.displayName = "Welcome4";
 
 export const Welcome4Action: FunctionalComponent = () => (
-  <>
-    <RouterLink class={s.actions_fake} to="/start">
+  <div class={s.actions}>
+    <RouterLink class={s.fake} to="/start">
       跳过
     </RouterLink>
     <RouterLink to="/start">开始记账</RouterLink>
     <RouterLink class={s.actions_fake} to="/start">
       跳过
     </RouterLink>
-  </>
+  </div>
 );
 Welcome4Action.displayName = "Welcome4Action";
